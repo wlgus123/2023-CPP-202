@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="문법\문자열 추가.cpp">
+    <ClCompile Include="문법\문자열 비교.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
