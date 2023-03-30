@@ -24,6 +24,5 @@ int main(void)
 		cout << "str1 > str2";
 	}
 	
-
 	return 0;
 }
