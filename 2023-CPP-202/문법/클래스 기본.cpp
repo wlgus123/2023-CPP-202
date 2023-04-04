@@ -70,7 +70,8 @@ int main(void)
 	
 	struct Person* ptr = &p;
 
-	cout << "키 : " << (*ptr).height << endl;
+	// 둘 다 같은 결과
+	cout << "키 : " << ptr->height << endl;
 	cout << "몸무게 : " << (*ptr).weight << endl;
 
 
