@@ -19,6 +19,15 @@ public:
 		address = "서울시 관악구";
 	}
 
+	Student(int _hakbun, string _name, string _tel, string _department, string _address)
+	{
+		hakbun = _hakbun;
+		name = _name;
+		tel = _tel;
+		department = _department;
+		address = _address;
+	}
+
 	// class 멤버 함수를 가질 수 있다
 	void print(void)
 	{
@@ -42,11 +51,14 @@ private:
 
 int main(void)
 {
-	// 자료형 : Student(class 생략 가능)
-	Student stu1;
-	
+	// 매개변수가 없는 생성자
+	// Student stu1;
+	Student stu1 = Student();
+	// stu1.print();
 
-	stu1.print();
+	Student stu2 = Student(2200, "류이치", "010-0000-0000", "뉴미디어소프트웨어", "일본어딘가");
+	stu2.print();
+
 
 	return 0;
 }
