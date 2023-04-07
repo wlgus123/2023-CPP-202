@@ -62,5 +62,8 @@ int main(void)
 	Student* stu3 = new Student(22, "율곡", "010-0000-0000", "유교", "한성");
 	stu3->print();
 
+	// 동적할당 해제(안하면 메모리 누수현상이 발생)
+	delete stu3;
+
 	return 0;
 }
