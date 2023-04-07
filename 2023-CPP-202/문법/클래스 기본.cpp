@@ -19,15 +19,11 @@ public:
 		address = "서울시 관악구";
 	}
 
-	Student(int hakbun, string name, string tel, string department, string address)
+	Student(int _hakbun, string _name, string _tel, string _department, string _address)
+		// 멤버변수 초기화. const/참조형 멤버변수 사용가능
+		: hakbun(_hakbun), name(_name), tel(_tel)
+		, department(_department), address(_address)
 	{
-		// this : 객체 자기자신을 가리키는 포인터(주소값)
-		// 멤버변수와 매개변수가 이름이 같아도 구별가능
-		this->hakbun = hakbun;
-		this->name = name;
-		this->tel = tel;
-		this->department = department;
-		this->address = address;
 	}
 
 	// class 멤버 함수를 가질 수 있다
