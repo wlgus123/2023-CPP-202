@@ -54,8 +54,13 @@ int main(void)
 	Student stu1 = Student();
 	// stu1.print();
 
-	Student stu2 = Student(2200, "류이치", "010-0000-0000", "뉴미디어소프트웨어", "일본어딘가");
-	stu2.print();
+	// 정적할당
+	// Student stu2 = Student(2200, "류이치", "010-0000-0000", "뉴미디어소프트웨어", "일본어딘가");
+	// stu2.print();
+
+	// 동적할당된 공간은 포인터로 접근한다
+	Student* stu3 = new Student(22, "율곡", "010-0000-0000", "유교", "한성");
+	stu3->print();
 
 	return 0;
 }
