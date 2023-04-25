@@ -12,6 +12,13 @@ public:
 		strcpy(c_str_, str);
 		size_ = l;
 	}
+
+	// 소멸자(destructor)
+	~MString()
+	{
+		// 소멸자로 생성자에서 동적할당한 메모리 해제
+		delete[] c_str_;
+	}
 	unsigned int size(void) { return size_; }
 	char* c_str(void) { return c_str_; }
 private:
