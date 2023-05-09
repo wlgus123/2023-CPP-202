@@ -30,12 +30,8 @@ private:
 
 int main(void)
 {
-	// 생성자가 호출되면서 "I will be back"(문자열) 만큼의 동적할당이 이뤄짐
-	MString* str = new MString("I will be back");
-	cout << str->c_str() << endl;
-
-	// 객체 str만 삭제. 동적할당으로 생성된 문자열은 그대로 남아있음(메모리 누수)
-	// TODO : 소멸자(destructor)를 이용하여 동적할당된 메모리도 해제하자
-	delete str;
+	MString str = MString("I will be back");
+	cout << str.c_str() << endl;
+		
 	return 0;
 }
