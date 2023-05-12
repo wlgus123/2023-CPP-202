@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="문법\클래스 중급.cpp">
+    <ClCompile Include="문법\깊은복사, 얕은복사.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
