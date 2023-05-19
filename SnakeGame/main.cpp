@@ -20,6 +20,12 @@ int main(void)
 			if (e.type == Event::Closed)
 				window.close();
 		}
+
+		if (Keyboard::isKeyPressed(Keyboard::Right))
+			snake.move(1, 0);
+		if (Keyboard::isKeyPressed(Keyboard::Left))
+			snake.move(-1, 0);
+
 		window.clear();
 
 		window.draw(snake);
