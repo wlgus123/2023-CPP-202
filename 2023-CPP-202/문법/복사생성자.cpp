@@ -34,6 +34,6 @@ private:
 int main(void)
 {
 	Munja m1 = Munja("abc");	// 일반생성자 호출
-	Munja m2 = m1;				// 복사생성자 호출
+	Munja m2 = m1;				// 복사생성자 호출 
 	return 0;
 }
