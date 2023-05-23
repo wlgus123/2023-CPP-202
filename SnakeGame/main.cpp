@@ -43,6 +43,11 @@ int main(void)
 		if (Keyboard::isKeyPressed(Keyboard::Down))
 			snake.move(0, 5);
 
+		// 뱀이 사과를 먹었을 때,
+		if (snake.getGlobalBounds().intersects(apple.getGlobalBounds())) {
+			apple.setPosition(rand() % (640 - 50), rand() % (480 - 50));
+		}
+
 
 		window.clear();
 
