@@ -34,13 +34,14 @@ int main(void)
 				window.close();
 		}
 
+		// 방향키가 동시에 눌러지지 않도록 else 처리
 		if (Keyboard::isKeyPressed(Keyboard::Right))
 			snake.move(5, 0);
-		if (Keyboard::isKeyPressed(Keyboard::Left))
+		else if (Keyboard::isKeyPressed(Keyboard::Left))
 			snake.move(-5, 0);
-		if (Keyboard::isKeyPressed(Keyboard::Up))
+		else if (Keyboard::isKeyPressed(Keyboard::Up))
 			snake.move(0, -5);
-		if (Keyboard::isKeyPressed(Keyboard::Down))
+		else if (Keyboard::isKeyPressed(Keyboard::Down))
 			snake.move(0, 5);
 
 		// 뱀이 사과를 먹었을 때,
