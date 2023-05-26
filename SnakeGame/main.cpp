@@ -78,7 +78,7 @@ int main(void)
 		snake.setPosition(snake_x * BLOCK_SIZE, snake_y * BLOCK_SIZE);
 
 		// 뱀이 사과를 먹었을 때,
-		if (snake.getGlobalBounds().intersects(apple.getGlobalBounds())) {
+		if (snake_x==apple_x && snake_y==apple_y) {
 			apple_x = rand() % G_WIDTH, apple_y = rand() % G_HEIGHT;
 			apple.setPosition(apple_x * BLOCK_SIZE, apple_y * BLOCK_SIZE);
 		}
