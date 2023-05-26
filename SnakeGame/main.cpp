@@ -10,6 +10,15 @@
 
 using namespace sf;
 
+class Snake {
+
+private:
+	int dir_;
+	int x_;
+	int y_;
+	RectangleShape sprite_;
+};
+
 int main(void)
 {
 	const int WIDTH = 1000;							// 픽셀 너비
