@@ -79,16 +79,16 @@ int main(void)
 		}
 
 		// update
-		if (snake.dir_ == DIR_UP) {
+		if (snake.dir_ == DIR_UP && snake.y_>0) {
 			snake.y_--;
 		}
-		else if (snake.dir_ == DIR_DOWN) {
+		else if (snake.dir_ == DIR_DOWN && snake.y_<G_HEIGHT-1) {
 			snake.y_++;
 		}
-		else if (snake.dir_ == DIR_RIGHT) {
+		else if (snake.dir_ == DIR_RIGHT && snake.x_<G_WIDTH-1) {
 			snake.x_++;
 		}
-		else if (snake.dir_ == DIR_LEFT) {
+		else if (snake.dir_ == DIR_LEFT && snake.x_>0) {
 			snake.x_--;
 		}
 		snake.sprite_.setPosition(snake.x_ * BLOCK_SIZE, snake.y_ * BLOCK_SIZE);
