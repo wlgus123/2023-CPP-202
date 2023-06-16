@@ -8,8 +8,6 @@ public:
 	Animal(int age, string name) : age_(age), name_(name)
 	{ 
 		cout << "동물 생성자" << endl;
-		cout << "나이 " << age_ << endl;
-		cout << "이름 " << name_ << endl;
 	}
 
 	~Animal() { cout << "동물 소멸자" << endl; }
@@ -31,9 +29,13 @@ public:
 	{ 
 		cout << "두루미 생성자" << endl;
 		leg_length_ = leg_length;
-		cout << "다리길이 " << leg_length_ << endl;
 	}
 	~Crane() { cout << "두루미 소멸자" << endl; }
+
+	void Bark()
+	{
+		cout << "두루두루" << endl;
+	}
 
 private:
 	int leg_length_;
@@ -41,9 +43,13 @@ private:
 
 int main(void)
 {
-	Crane* crane = new Crane(3, "지우", 108);	// 부모의 멤버변수를 사용
-	crane->Eat();	// 부모의 멤버함수를 사용
+	Animal* animal = new Animal(18, "동물이");
+	animal->Bark();		// 동물 짖는다
+	delete animal;
 
-	delete crane;
+	animal = new Crane(3, "지우", 108);
+	animal->Bark();		// 동물 짖는다(정적 바인딩으로 인해 부모의 멤버함수를 호출)
+	delete animal;
+
 	return 0;
 }
