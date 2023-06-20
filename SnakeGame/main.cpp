@@ -55,7 +55,9 @@ int main(void)
 
 	for (int i = 0; i < BODY_MAX; i++) {
 		snake.body_[i].x_ = -50, snake.body_[i].y_ = -50;			// 뱀의 그리드 좌표
-		snake.body_[i].sprite_.setFillColor(Color::White);
+		snake.body_[i].sprite_.setOutlineColor(Color(0, 128, 0));
+		snake.body_[i].sprite_.setOutlineThickness(5.f);
+		snake.body_[i].sprite_.setFillColor(Color::Green);
 		snake.body_[i].sprite_.setPosition(snake.body_[i].x_ * BLOCK_SIZE, snake.body_[i].y_ * BLOCK_SIZE);
 		snake.body_[i].sprite_.setSize(Vector2f(BLOCK_SIZE, BLOCK_SIZE));
 	}
