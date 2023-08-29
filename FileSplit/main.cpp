@@ -1,6 +1,4 @@
-#include "animal.h"
-#include "cat.h"
-#include "dog.h"
+#include "all.h"
 
 int main(void)
 {

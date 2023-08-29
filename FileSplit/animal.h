@@ -1,4 +1,5 @@
 #pragma once
+#include "all.h"
 
 class Animal {
 public:
