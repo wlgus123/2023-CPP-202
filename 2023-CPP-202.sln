@@ -14,6 +14,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakeGame", "SnakeGame\Snak
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inheritance", "Inheritance\Inheritance.vcxproj", "{E9F168D7-7338-4290-9E42-4ACC417C052C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileSplit", "FileSplit\FileSplit.vcxproj", "{77000A36-9F0D-46ED-8AB4-40B94569B55C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -46,6 +48,14 @@ Global
 		{E9F168D7-7338-4290-9E42-4ACC417C052C}.Release|x64.Build.0 = Release|x64
 		{E9F168D7-7338-4290-9E42-4ACC417C052C}.Release|x86.ActiveCfg = Release|Win32
 		{E9F168D7-7338-4290-9E42-4ACC417C052C}.Release|x86.Build.0 = Release|Win32
+		{77000A36-9F0D-46ED-8AB4-40B94569B55C}.Debug|x64.ActiveCfg = Debug|x64
+		{77000A36-9F0D-46ED-8AB4-40B94569B55C}.Debug|x64.Build.0 = Debug|x64
+		{77000A36-9F0D-46ED-8AB4-40B94569B55C}.Debug|x86.ActiveCfg = Debug|Win32
+		{77000A36-9F0D-46ED-8AB4-40B94569B55C}.Debug|x86.Build.0 = Debug|Win32
+		{77000A36-9F0D-46ED-8AB4-40B94569B55C}.Release|x64.ActiveCfg = Release|x64
+		{77000A36-9F0D-46ED-8AB4-40B94569B55C}.Release|x64.Build.0 = Release|x64
+		{77000A36-9F0D-46ED-8AB4-40B94569B55C}.Release|x86.ActiveCfg = Release|Win32
+		{77000A36-9F0D-46ED-8AB4-40B94569B55C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
