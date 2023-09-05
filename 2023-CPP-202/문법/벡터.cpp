@@ -1,33 +1,24 @@
 ﻿#include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main(void)
 {
-	int* arr = new int[4];
-	arr[0] = 10;
-	arr[1] = 20;
-	arr[2] = 30;
-	arr[3] = 40;
+	// 전통적인 배열은 크기가 고정되어 있으나,
+	// 벡터는 크기가 자유롭게 변할 수 있는 동적배열이다.
+	vector<int> arr;
+	arr.reserve(4);		// 크기를 4로
+	arr.push_back(10);
+	arr.push_back(20);
+	arr.push_back(30);
+	arr.push_back(40);
 
 	// 꽉찬 공간에 새로운 데이터를 넣어보자
-		// 크기가 확장된 새로운 공간을 만든다.
-	int* temp = new int[6];
-		// 기존의 값을 복사한다.
-	for (int i = 0; i < 4; i++)
-		temp[i] = arr[i];
-		// 기존 공간 삭제
-	delete[] arr;
-		// arr이 새로운 공간을 가리킴
-	arr = temp;
-		// 새로운 값을 넣어줌
-	arr[4] = 50;
-
+	arr.push_back(50);
 
 	for (int i = 0; i < 5; i++)
 		cout << arr[i] << " ";
 
-
-	delete[] arr;
 	return 0;
 }
